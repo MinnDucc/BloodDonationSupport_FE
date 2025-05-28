@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import DefaultLayout from "../layouts/DefaultLayout/DefaultLayout";
-import Home from "../pages/DefautPage/DefaultDetails/Home";
+import Home from "../pages/homepage/Home";
 import Contact from "../pages/DefautPage/DefaultDetails/Contact";
 import News from "../pages/DefautPage/DefaultDetails/News";
 import QuestionAndAns from "../pages/DefautPage/DefaultDetails/QuestionAndAns";
@@ -14,7 +14,7 @@ const CustomRoute = () => {
 
             <Route path="/" element={<DefaultLayout />}>
                 <Route path="/auth/*" element={<AuthPage />} />
-                <Route index element={<Home />} />
+                <Route index element={<Home></Home>} />
                 <Route path="home" element={<Home />} />
                 <Route path="contact" element={<Contact />} />
                 <Route path="news" element={<News />} />

@@ -92,7 +92,7 @@ export default function ForgotPassword() {
   if (isSubmitted) {
     return (
       // <div className="flex min-h-screen items-center justify-center bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
-        <div className="w-full max-w-md space-y-8 bg-white p-8 rounded-lg shadow-md">
+        <div className="w-full max-w-md space-y-8 bg-white p-8 rounded-lg shadow-md" sx={{ p: 4, mt: 8, borderRadius: '40px' }}>
           <div className="text-center">
             <div className="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100">
               <CheckCircle className="h-6 w-6 text-green-600" />
@@ -151,7 +151,7 @@ export default function ForgotPassword() {
 
   return (
     // <div className="flex min-h-screen items-center justify-center bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="w-full max-w-md space-y-8 bg-white p-8 rounded-lg shadow-md">
+      <div className="w-full max-w-md space-y-8 bg-white p-8 rounded-lg shadow-md" sx={{ p: 4, mt: 8, borderRadius: '40px' }} >
         <div>
           <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
             Quên mật khẩu

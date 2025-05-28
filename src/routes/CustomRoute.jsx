@@ -6,6 +6,7 @@ import News from "../pages/DefautPage/DefaultDetails/News";
 import QuestionAndAns from "../pages/DefautPage/DefaultDetails/QuestionAndAns";
 import MemberLayout from "../layouts/MemberLayout/Member";
 import AuthPage from "../pages/authPage/AuthPage";
+import UserPage from "../pages/user/UserPage";
 
 const CustomRoute = () => {
     return (
@@ -22,6 +23,7 @@ const CustomRoute = () => {
             </Route>
 
             <Route path="/user/*" element={<MemberLayout />}>
+                <Route index element={<UserPage />} />
                 <Route path="home" element={<Home />} />
                 <Route path="contact" element={<Contact />} />
                 <Route path="news" element={<News />} />
